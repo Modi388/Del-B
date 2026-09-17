@@ -39,3 +39,7 @@ Console.WriteLine(anna.Courses.Count);
 
 Student ingen = new Student("Ingen");
 matte.Remove(ingen);                        
+
+matte.Enroll(anna);
+matte.Enroll(modi);
+matte.RollCall();

@@ -1,49 +1,12 @@
-﻿Student anna = new Student("Anna"); // kör konstruktorn och ger tillbaka ett klart objekt
-Console.WriteLine(anna.Name); // tar ut nammnet från anna och skriver ut det
-Console.WriteLine(anna.Courses.Count); // skriver ut hur många kurser anna har
+﻿Student tony = new Student("Tony");
+Student chris = new Student("Christoffer");
+Student paulie = new Student("Paulie");
 
-Student modi = new Student("Modi");
-Console.WriteLine(modi.Name);
-Console.WriteLine(modi.Courses.Count);
+Course geo = new Course("Geografi", 5);
+Course his = new Course("Historia", 2);
 
-Console.WriteLine(anna); // genom toString i Student.cs kan jag få namnet direkt 
+Console.WriteLine("1 - Anmälan genom Enroll");
+geo.Enroll(tony);
+geo.RollCall();
+tony.Schedule();
 
-Course matte = new Course("Matematik", 5);
-Console.WriteLine(matte.Name);
-Console.WriteLine(matte.MaxSeats);
-
-matte.Enroll(anna);
-Console.WriteLine(matte.Students.Count);
-Console.WriteLine(anna.Courses.Count);
-
-Course fysik = new Course("Fysik", 3);
-modi.Join(fysik);
-Console.WriteLine(fysik.Students.Count);   
-Console.WriteLine(modi.Courses.Count);     
-
-matte.Enroll(anna);
-anna.Join(matte);
-
-Course kemi = new Course("Kemi", 2);
-kemi.Enroll(anna);
-kemi.Enroll(modi);
-Student bo = new Student("Bo");
-kemi.Enroll(bo);
-
-Console.WriteLine(kemi.Students.Count);   
-Console.WriteLine(bo.Courses.Count);      
-
-matte.Remove(anna);
-Console.WriteLine(matte.Students.Count);  
-Console.WriteLine(anna.Courses.Count);  
-
-Student ingen = new Student("Ingen");
-matte.Remove(ingen);                        
-
-matte.Enroll(anna);
-matte.Enroll(modi);
-matte.RollCall();
-
-anna.Join(matte);
-anna.Join(fysik);
-anna.Schedule();

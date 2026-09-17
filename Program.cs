@@ -15,3 +15,8 @@ Console.WriteLine(matte.MaxSeats);
 matte.Enroll(anna);
 Console.WriteLine(matte.Students.Count);
 Console.WriteLine(anna.Courses.Count);
+
+Course fysik = new Course("Fysik", 3);
+modi.Join(fysik);
+Console.WriteLine(fysik.Students.Count);   
+Console.WriteLine(modi.Courses.Count);     

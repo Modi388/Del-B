@@ -12,3 +12,6 @@ Course matte = new Course("Matematik", 5);
 Console.WriteLine(matte.Name);
 Console.WriteLine(matte.MaxSeats);
 
+matte.Enroll(anna);
+Console.WriteLine(matte.Students.Count);
+Console.WriteLine(anna.Courses.Count);

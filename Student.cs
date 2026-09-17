@@ -1,7 +1,7 @@
 class Student // skapar klassen Student
 {
     public string Name; // gör att varje Student har sitt egna namn. public betyder att man komma åt det utifrån
-    public List<Course> Courses = new List<Course>(); // en lista som inehåller course-objekt. new List<course>() gör att varje student får en tom lista frpn start
+    public List<Course> Courses = new List<Course>(); // en lista som inehåller course-objekt. new List<course>() gör att varje student får en tom lista från start
 
     public Student(string name) //konstruktor. körs automatiskt när man skriver new Student i program.cs
     {

@@ -6,4 +6,9 @@ Student modi = new Student("Modi");
 Console.WriteLine(modi.Name);
 Console.WriteLine(modi.Courses.Count);
 
-Console.WriteLine(anna); // genom toString i Progrma.cs kan jag få namnet direkt 
+Console.WriteLine(anna); // genom toString i Student.cs kan jag få namnet direkt 
+
+Course matte = new Course("Matematik", 5);
+Console.WriteLine(matte.Name);
+Console.WriteLine(matte.MaxSeats);
+

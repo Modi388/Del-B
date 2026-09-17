@@ -20,3 +20,6 @@ Course fysik = new Course("Fysik", 3);
 modi.Join(fysik);
 Console.WriteLine(fysik.Students.Count);   
 Console.WriteLine(modi.Courses.Count);     
+
+matte.Enroll(anna);
+anna.Join(matte);

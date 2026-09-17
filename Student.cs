@@ -12,7 +12,7 @@ class Student // skapar klassen Student
         return Name; 
     }
 
-    public void Join(Course course) // 
+    public void Join(Course course) 
     {
         course.Enroll(this); // metoden skickar vidare till enroll som finns i course.cs istället för att göra det själv. den gör så för att all logik ska ligga i samma plats och regleln gäller oavsett från vilket håll man anmäler.
     }

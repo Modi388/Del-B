@@ -20,8 +20,15 @@ class Course
             Console.WriteLine($"{student.Name} går redan i {Name}");
             return; // stoppar hela metoden så den inte går vidare.
         }
-            Students.Add(student); // gör så att enroll funkar som att en elev ska gå in i en kurs
-            student.Courses.Add(this); // this är den kurs vi står i just nu. hela raden gör att båda listorna ska stämma. När man gör enroll det ska synas i både courses och students.
-        
+
+        if (Students.Count >= MaxSeats)
+        {
+            Console.WriteLine("Kursen är full");
+            return;
+        }
+
+        Students.Add(student); // gör så att enroll funkar som att en elev ska gå in i en kurs
+        student.Courses.Add(this); // this är den kurs vi står i just nu. hela raden gör att båda listorna ska stämma. När man gör enroll det ska synas i både courses och students.
+
     }
 }

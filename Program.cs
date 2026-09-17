@@ -23,3 +23,12 @@ Console.WriteLine(modi.Courses.Count);
 
 matte.Enroll(anna);
 anna.Join(matte);
+
+Course kemi = new Course("Kemi", 2);
+kemi.Enroll(anna);
+kemi.Enroll(modi);
+Student bo = new Student("Bo");
+kemi.Enroll(bo);
+
+Console.WriteLine(kemi.Students.Count);   
+Console.WriteLine(bo.Courses.Count);      

@@ -21,9 +21,9 @@ class Course
             return; // stoppar hela metoden så den inte går vidare.
         }
 
-        if (Students.Count >= MaxSeats)
+        if (Students.Count >= MaxSeats) // kollar ifall kursen har nåt sin max kapacitet
         {
-            Console.WriteLine("Kursen är full");
+            Console.WriteLine("Kursen är full"); 
             return;
         }
 
@@ -31,4 +31,6 @@ class Course
         student.Courses.Add(this); // this är den kurs vi står i just nu. hela raden gör att båda listorna ska stämma. När man gör enroll det ska synas i både courses och students.
 
     }
+
+    public void
 }

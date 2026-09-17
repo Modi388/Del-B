@@ -32,3 +32,10 @@ kemi.Enroll(bo);
 
 Console.WriteLine(kemi.Students.Count);   
 Console.WriteLine(bo.Courses.Count);      
+
+matte.Remove(anna);
+Console.WriteLine(matte.Students.Count);  
+Console.WriteLine(anna.Courses.Count);  
+
+Student ingen = new Student("Ingen");
+matte.Remove(ingen);                        

@@ -32,5 +32,15 @@ class Course
 
     }
 
-    public void
+    public void Remove(Student student)
+    {
+        if (!Students.Contains(student)) // ! gör att motsatesen händer. Alltså kolla ifall studenten inte existerar i denna kursens lista
+        {
+            Console.WriteLine("Studenten går inte i denna kurs");
+            return;
+        } 
+
+        Students.Remove(student); // tar bort student
+        student.Courses.Remove(this); // gör att det funkar åt båda håll. kursen ska bort från studentens kurslista och studenten ska bort från kursens studentlista
+    }
 }

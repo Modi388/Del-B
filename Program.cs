@@ -25,3 +25,11 @@ his.Enroll(paulie);
 his.Enroll(tony);
 his.RollCall();
 tony.Schedule();
+
+Console.WriteLine("5 - Borttagning");
+chris.Leave(his);
+his.RollCall();
+chris.Schedule();
+
+Console.WriteLine("6 - Borttagning av studenter som inte finns med i kurs");
+tony.Leave(his);

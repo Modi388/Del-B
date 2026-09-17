@@ -15,3 +15,7 @@ chris.Join(his);
 his.RollCall();
 chris.Schedule();
 
+Console.WriteLine("3 - Ingen dublett");
+geo.Enroll(tony);
+tony.Join(geo);
+geo.RollCall();

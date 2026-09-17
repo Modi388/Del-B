@@ -10,3 +10,8 @@ geo.Enroll(tony);
 geo.RollCall();
 tony.Schedule();
 
+Console.WriteLine("2 - Anmälan genom Join");
+chris.Join(his);
+his.RollCall();
+chris.Schedule();
+

@@ -6,8 +6,4 @@ Student modi = new Student("Modi");
 Console.WriteLine(modi.Name);
 Console.WriteLine(modi.Courses.Count);
 
-
-
-
-
-
+Console.WriteLine(anna); // genom toString i Progrma.cs kan jag få namnet direkt 

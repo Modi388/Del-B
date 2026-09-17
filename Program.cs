@@ -19,3 +19,9 @@ Console.WriteLine("3 - Ingen dublett");
 geo.Enroll(tony);
 tony.Join(geo);
 geo.RollCall();
+
+Console.WriteLine("4 - Full kurs");
+his.Enroll(paulie);
+his.Enroll(tony);
+his.RollCall();
+tony.Schedule();

@@ -43,3 +43,7 @@ matte.Remove(ingen);
 matte.Enroll(anna);
 matte.Enroll(modi);
 matte.RollCall();
+
+anna.Join(matte);
+anna.Join(fysik);
+anna.Schedule();

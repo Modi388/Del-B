@@ -21,4 +21,13 @@ class Student // skapar klassen Student
     {
         course.Remove(this); // samma som join fast gör att eleven lämnar. Anropar remove från course klassen.
     }
+
+    public void Schedule() // som RollCall fast omvänt så är detta en metod som visar en lista på alla kurser studenten går på
+    {
+        Console.WriteLine(this);
+        for (int i = 0; i < Courses.Count; i++) 
+        {
+            Console.WriteLine(Courses[i]);
+        }
+    }
 }

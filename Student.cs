@@ -16,4 +16,9 @@ class Student // skapar klassen Student
     {
         course.Enroll(this); // metoden skickar vidare till enroll som finns i course.cs istället för att göra det själv. den gör så för att all logik ska ligga i samma plats och regleln gäller oavsett från vilket håll man anmäler.
     }
+
+    public void Leave(Course course)
+    {
+        course.Remove(this); // samma som join fast gör att eleven lämnar. Anropar remove från course klassen.
+    }
 }
